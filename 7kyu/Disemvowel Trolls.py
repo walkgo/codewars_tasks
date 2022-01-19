@@ -2,7 +2,7 @@ def disemvowel(string):
     consonant  = []
     for i in string:
         if i not in "aeiouAEIOU":
-            consonant .append(i)
+            consonant.append(i)
     return ''.join(consonant)
 
 
