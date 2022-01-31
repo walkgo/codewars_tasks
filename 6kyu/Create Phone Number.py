@@ -4,4 +4,4 @@ def create_phone_number(n):
 
 # Best Practices
 def create_phone_number(n):
-    return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+    print ("({}{}{}) {}{}{}-{}{}{}{}".format(*n))
