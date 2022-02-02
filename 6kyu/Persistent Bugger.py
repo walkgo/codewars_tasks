@@ -1,17 +1,20 @@
+from math import prod
+
+
 def persistence(n):
-    # def digital_root(n):
-    # while n > 9:
-    #     n = sum(map(int,str(n)))
-    # return n
-    # print(list(map(int,str(n))))
-    # while n > 9:
-    n = list(map(int,str(n)))
-    print(sum(x * y for x, y in zip(n, n[1:])))
+    counter = 0
+    while n > 9:
+        counter = counter + 1
+        n = list(map(int,str(n)))
+        n = prod(n)
+    return counter
 
 
-
-
-
-
-
-persistence(999)
+# Best Practices (I doubt :/)
+import operator
+def persistence(n):
+    i = 0
+    while n>=10:
+        n=reduce(operator.mul,[int(x) for x in str(n)],1)
+        i+=1
+    return i
