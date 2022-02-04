@@ -9,7 +9,7 @@ def persistence(n):
         n = prod(n)
     return counter
 
-
+print(persistence(4444))
 # Best Practices (I doubt :/)
 # import operator
 # def persistence(n):
